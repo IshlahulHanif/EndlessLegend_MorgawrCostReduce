@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<RuntimeModule Name="MorgwarCheaperDocks" Type="Extension">
+
+		<Title>Morgwar Cheaper Docks</Title>
+		<Author>Shlh</Author>
+		<Version Major="1" Minor="0" Revision="1" />
+		<Homepage></Homepage>
+		<Tags>Balance, Other</Tags>
+		<PreviewImageFile>Cargo_Docks.png</PreviewImageFile>
+		<ReleaseNotes></ReleaseNotes>
+		<Description>
+		Morgwar has cargo docks on era II but the cost is too high, this mod reduce the cost to match it to other era II building costs
+		</Description>
+
+		<Plugins>
+
+			<!-- AI -->
+			<DatabasePlugin DataType="AIParameterDatatableElement, Assembly-CSharp">
+				<FilePath>AI/AIParameters[*].xml</FilePath>
+			</DatabasePlugin>
+
+			<!-- GamePlay -->
+			<DatabasePlugin DataType="Amplitude.Unity.Simulation.SimulationDescriptor, Assembly-CSharp-firstpass">
+				<FilePath>Simulation/SimulationDescriptors[*].xml</FilePath>
+			</DatabasePlugin>
+		
+			<DatabasePlugin DataType="ConstructibleElement, Assembly-CSharp">
+				<ExtraTypes>
+				<ExtraType DataType="BoosterDefinition, Assembly-CSharp" />
+				<ExtraType DataType="BoosterGeneratorDefinition, Assembly-CSharp" />
+				<ExtraType DataType="CityConstructibleActionDefinition, Assembly-CSharp" />
+				<ExtraType DataType="CityImprovementDefinition, Assembly-CSharp" />
+				<ExtraType DataType="CoastalDistrictImprovementDefinition, Assembly-CSharp" />
+				<ExtraType DataType="DiplomaticTermBoosterExchangeDefinition, Assembly-CSharp" />
+				<ExtraType DataType="DiplomaticTermCityExchangeDefinition, Assembly-CSharp" />
+				<ExtraType DataType="DiplomaticTermDefinition, Assembly-CSharp" />
+				<ExtraType DataType="DiplomaticTermDiplomaticRelationStateDefinition, Assembly-CSharp" />
+				<ExtraType DataType="DiplomaticTermMapExchangeDefinition, Assembly-CSharp" />
+				<ExtraType DataType="DiplomaticTermResourceExchangeDefinition, Assembly-CSharp" />
+				<ExtraType DataType="DiplomaticTermTechnologyExchangeDefinition, Assembly-CSharp" />
+				<ExtraType DataType="DiplomaticTermProposalDefinition, Assembly-CSharp" />
+				<ExtraType DataType="DiplomaticTermPrisonerExchangeDefinition, Assembly-CSharp" />
+				<ExtraType DataType="DistrictImprovementDefinition, Assembly-CSharp" />
+				<ExtraType DataType="EmpirePlanDefinition, Assembly-CSharp" />
+				<ExtraType DataType="FreeDistrictImprovementDefinition, Assembly-CSharp" />
+				<ExtraType DataType="ItemDefinition, Assembly-CSharp" />
+				<ExtraType DataType="PointOfInterestImprovementDefinition, Assembly-CSharp" />
+				<ExtraType DataType="TechnologyDefinition, Assembly-CSharp" />
+				<ExtraType DataType="TechnologyEraDefinition, Assembly-CSharp" />
+				<ExtraType DataType="UnitBodyDefinition, Assembly-CSharp" />
+				<ExtraType DataType="UnitProfile, Assembly-CSharp" />
+				<ExtraType DataType="UnitSkill, Assembly-CSharp" />
+				<ExtraType DataType="UnitAbility, Assembly-CSharp" />
+				</ExtraTypes>
+				<FilePath>Simulation/DepartmentOfIndustry+Constructibles[*].xml</FilePath>
+				<FilePath>Simulation/DepartmentOfScience+Constructibles[*].xml</FilePath>
+			</DatabasePlugin>
+			<DatabasePlugin DataType="DepartmentOfIndustry+ConstructibleElement, Assembly-CSharp">
+				<ExtraTypes>
+				<ExtraType DataType="BoosterGeneratorDefinition, Assembly-CSharp" />
+				<ExtraType DataType="CityConstructibleActionDefinition, Assembly-CSharp" />
+				<ExtraType DataType="CityImprovementDefinition, Assembly-CSharp" />
+				<ExtraType DataType="CoastalDistrictImprovementDefinition, Assembly-CSharp" />
+				<ExtraType DataType="DistrictImprovementDefinition, Assembly-CSharp" />
+				<ExtraType DataType="FreeDistrictImprovementDefinition, Assembly-CSharp" />
+				<ExtraType DataType="PointOfInterestImprovementDefinition, Assembly-CSharp" />
+				</ExtraTypes>
+				<FilePath>Simulation/DepartmentOfIndustry+Constructibles[*].xml</FilePath>
+			</DatabasePlugin>
+			<DatabasePlugin DataType="DepartmentOfScience+ConstructibleElement, Assembly-CSharp">
+				<ExtraTypes>
+				<ExtraType DataType="TechnologyDefinition, Assembly-CSharp" />
+				<ExtraType DataType="TechnologyEraDefinition, Assembly-CSharp" />
+				</ExtraTypes>
+				<FilePath>Simulation/DepartmentOfScience+Constructibles[*].xml</FilePath>
+			</DatabasePlugin>
+
+
+			<!-- Gui -->
+
+			<DatabasePlugin DataType="Amplitude.Unity.Gui.GuiElement, Assembly-CSharp-firstpass">
+				<ExtraTypes>
+				<ExtraType DataType="Amplitude.Unity.Gui.ExtendedGuiElement, Assembly-CSharp-firstpass" />
+				<ExtraType DataType="QuestGuiElement, Assembly-CSharp" />
+				<ExtraType DataType="TechnologyGuiElement, Assembly-CSharp" />
+				<ExtraType DataType="TechnologyEraGuiElement, Assembly-CSharp" />
+				<ExtraType DataType="UnitSkillGuiElement, Assembly-CSharp" />
+				<ExtraType DataType="DiplomaticTermGuiElement, Assembly-CSharp" />
+				<ExtraType DataType="HitInfoGuiElement, Assembly-CSharp" />
+				<ExtraType DataType="QuestWorldEffectGuiElement, Assembly-CSharp" />
+				</ExtraTypes>
+				<FilePath>Gui/GuiElements[*].xml</FilePath>
+			</DatabasePlugin>
+
+		</Plugins>
+	</RuntimeModule>
+</Datatable>

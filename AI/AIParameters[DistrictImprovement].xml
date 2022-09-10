@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <AIParameterDatatableElement  Name="DistrictImprovementDocksSeaDemons">
+    <AIParameter Name="CityFood"                                        Value="2"/>
+    <AIParameter Name="CityApproval"                                    Value="20"/>
+    <AIParameter Name="CityIndustry"                                    Value="5 * (1 + $Count(ClassCity/TerrainTagWater))"/>
+    <AIParameter Name="EmpireFasterMovement"                            Value="0.1 * $Count(ClassEmpire/ClassResearch,TechnologyShip)"/>
+  </AIParameterDatatableElement>
+
+</Datatable>
