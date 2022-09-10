@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <!-- Sea Demons: Cargo Docks (Early and cheaper) -->
-  <TechnologyDefinition  Name="TechnologyDefinitionDocksSeaDemons"            TechnologyFlags="Affinity">
+  <!-- <TechnologyDefinition  Name="TechnologyDefinitionDocksSeaDemons"            TechnologyFlags="Affinity">
     <UnlockCategoryOverride Category="PointOfInterestImprovement" SubCategory="SubCategoryDistrict"/>
     <SimulationDescriptorReference Name="OnlyOnePerCity" />
     <SimulationDescriptorReference Name="DocksLocation" />
     <SimulationDescriptorReference Name="TechnologyDocksSeaDemons" />
+    <SimulationDescriptorReference Name="TechnologyDocks2" />
+    <SimulationDescriptorReference Name="EmbarkDisembarkBonus" />
+    <SimulationDescriptorReference Name="TechnologyCountIncreaseEra2" />
+    <CustomCost ResourceName="EmpireResearch">$Property(EmpireTypeMajor/ClassResearch:TechnologyCost)* $Property(EmpireTypeMajor/ClassResearch:Era2CostMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,TechnologyEra">EmpireTypeMajor/ClassResearch,TechnologyEra2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable">EmpireTypeMajor,FactionTraitSeaDemons3</PathPrerequisite>
+  </TechnologyDefinition> -->
+
+  <TechnologyDefinition  Name="TechnologyDefinitionDocksSeaDemons"            TechnologyFlags="Affinity">
+    <UnlockCategoryOverride Category="PointOfInterestImprovement" SubCategory="SubCategoryDistrict"/>
+    <SimulationDescriptorReference Name="OnlyOnePerCity" />
+    <SimulationDescriptorReference Name="DocksLocation" />
+    <SimulationDescriptorReference Name="TechnologyDocks" />
     <SimulationDescriptorReference Name="TechnologyDocks2" />
     <SimulationDescriptorReference Name="EmbarkDisembarkBonus" />
     <SimulationDescriptorReference Name="TechnologyCountIncreaseEra2" />
