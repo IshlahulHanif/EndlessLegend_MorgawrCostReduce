@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<RuntimeModule Name="MorgwarCheaperDocks" Type="Extension">
+	<RuntimeModule Name="MorgawrCheaperDocks" Type="Extension">
 
-		<Title>Morgwar Cheaper Docks</Title>
+		<Title>Morgawr Cheaper Docks</Title>
 		<Author>Shlh</Author>
 		<Version Major="1" Minor="0" Revision="1" />
 		<Homepage></Homepage>
@@ -10,7 +10,7 @@
 		<PreviewImageFile>Cargo_Docks.png</PreviewImageFile>
 		<ReleaseNotes></ReleaseNotes>
 		<Description>
-		Morgwar has cargo docks on era II but the cost is too high, this mod reduce the cost to match it to other era II building costs
+		Morgawr has cargo docks on era II but the cost is too high, this mod reduce the cost to match it to other era II building costs
 		</Description>
 
 		<Plugins>
